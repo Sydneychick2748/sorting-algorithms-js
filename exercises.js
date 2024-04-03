@@ -4,6 +4,30 @@ function bubbleSort(arr) {
     const n = arr.length;
 
     // TODO: Implement the Bubble Sort algorithm
+    
+   // Outer loop iterates from the first element to the second-to-last element of the array
+for (let i = 0; i < n - 1; i++) {
+    console.log(`Outer loop iteration ${i + 1}:`);
+    // Inner loop iterates from the first element to the element before the last `i` elements of the array
+    for (let j = 0; j < n - i - 1; j++) {
+        console.log(`    Inner loop iteration ${j + 1}:`);
+        // If the current element is greater than the next element, swap them
+        if (arr[j] > arr[j + 1]) {
+            console.log(`        Swapping ${arr[j]} and ${arr[j + 1]}`);
+      // Store the value of the current element at index j in a temporary variable
+let temp = arr[j];
+
+// Replace the value of arr[j] with the value of the next element (arr[j + 1])
+arr[j] = arr[j + 1];
+
+// Replace the value of the next element (arr[j + 1]) with the value stored in the temporary variable
+arr[j + 1] = temp;
+
+
+    }
+
+}
+    }
 
     return arr;
 }
@@ -13,6 +37,7 @@ const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
 console.log("Unsorted Array:", unsortedArray);
 
 // TODO: Call the bubbleSort function to sort the array
+const sortedArray = bubbleSort(unsortedArray);
 
 console.log("Sorted Array:", unsortedArray);
 
