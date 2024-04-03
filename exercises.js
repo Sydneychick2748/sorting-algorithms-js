@@ -94,6 +94,9 @@ console.log("Sorted Words alphabet:", sortedWordsAlphabet);
 
 //Your task is to complete the implementation of the selectionSortWords function. Use the Selection Sort algorithm to sort the array of words in lexicographical order. Remember to find the index of the minimum word in the unsorted part and swap it with the first unsorted word.
 
+
+
+//-------very hard for me i am not understanding this 
 // Question 3
 //loop threw the array starting at 1 to compare each item from the item before
 
